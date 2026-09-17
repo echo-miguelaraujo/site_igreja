@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Igreja em Inhoaíba</title>
+    <meta name="description" content="Bem-vindo à Igreja em Inhoaíba. Somos Polo Oficial do Seminário do Sul.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Arquivo CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- CABEÇALHO (Transparente sobre a imagem) -->
+    <header id="header" class="absolute top-0 left-0 w-full z-50 text-white transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            
+            <!-- Logo da Igreja -->
+            <a href="#inicio" class="flex items-center transition hover:opacity-80">
+                <img src="logo-igreja.png" alt="Igreja em Inhoaíba" class="h-10 w-auto" onerror="this.style.display='none'; document.getElementById('logo-texto').style.display='block';">
+                <span id="logo-texto" class="text-xl font-bold tracking-tight hidden">IGREJA <span class="font-light">INHOAÍBA</span></span>
+            </a>
+
+            <!-- Menu Desktop -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#quem-somos" class="hover:text-gray-300 transition">Quem Somos</a>
+                <a href="#seminario" class="hover:text-gray-300 transition">Seminário</a>
+                <a href="#projetos" class="hover:text-gray-300 transition">Projetos</a>
+                <a href="#programacao" class="hover:text-gray-300 transition">Programação</a>
+            </nav>
+
+            <!-- Botão Menu Mobile -->
+            <button id="btn-mobile" class="md:hidden text-white hover:text-gray-300">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <nav id="menu-mobile" class="hidden md:hidden bg-white text-gray-800 p-4 flex flex-col space-y-4 shadow-lg text-center font-medium absolute w-full top-24 left-0">
+            <a href="#quem-somos" class="menu-link p-2 border-b">Quem Somos</a>
+            <a href="#seminario" class="menu-link p-2 border-b">Seminário</a>
+            <a href="#projetos" class="menu-link p-2 border-b">Projetos</a>
+            <a href="#programacao" class="menu-link p-2">Programação</a>
+        </nav>
+    </header>
+
+    <!-- BANNER HERO: FUNDO DE FLORES + ESCRITA PNG -->
+    <section id="inicio" class="relative h-screen min-h-[550px] flex items-center justify-center text-center text-white bg-cover bg-center px-4" style="background-image: url('fundo-florescer.jpeg'); background-color: #a3a3a3;">
+        
+        <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/20 pointer-events-none"></div>
+        
+        <div class="relative z-10 flex items-center justify-center w-full max-w-4xl mt-12">
+            <img 
+                src="texto-florescer.png" 
+                alt="Ano de Florescer" 
+                class="w-full max-w-[85%] sm:max-w-[75%] md:max-w-[70%] lg:max-w-[800px] h-auto object-contain drop-shadow-2xl transition-all duration-300"
+            />
+        </div>
+
+    </section>
+
+    <!-- SEÇÃO QUEM SOMOS -->
+    <section id="quem-somos" class="py-20 bg-white text-gray-800">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-10 text-gray-900 border-b pb-4">Quem Somos</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10 text-sm md:text-base leading-relaxed text-gray-600">
+                <div class="space-y-4">
+                    <p>Aliquam convallis elementum est et efficitur. Ut ornare ligula eget arcu pharetra, et mattis eros rhoncus. Cras urna eros, bibendum ut ante in, accumsan ornare felis. Cras efficitur lectus libero, at rhoncus ipsum luctus et. Donec dui dolor, pretium ac dolor semper, bibendum laoreet mi.</p>
+                    <p>Mauris vitae sem non massa ullamcorper venenatis eget sed lectus. Maecenas fermentum libero ut scelerisque malesuada. Suspendisse ullamcorper rhoncus molestie. Curabitur ut nisi.</p>
+                    <p>Donec enim odio, hendrerit sit amet condimentum semper, elementum vitae metus. Quisque a iaculis magna, rutrum luctus ex. Nam eu arcu.</p>
+                </div>
+                <div class="space-y-4">
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at dictum metus. Vivamus velit tortor, congue eu dictum a, tempor ac risus. Integer porttitor, nunc non dignissim volutpat, velit quam interdum nisi, ac tincidunt justo.</p>
+                    <p>Vivamus varius uam at sem euismod ullamcorper. Maecenas non euismod nunc, ultricies mollis ante. Vestibulum eget elementum ligula, pellentesque scelerisque elit. Nullam eros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SEMINÁRIO DO SUL -->
+    <section id="seminario" class="py-24 bg-gradient-to-r from-cyan-400 via-blue-500 to-blue-800 text-white">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+            
+            <div class="flex flex-col items-start space-y-2 order-2 md:order-1">
+                <h3 class="text-2xl md:text-3xl font-semibold tracking-tight">Matrículas abertas</h3>
+                <p class="text-sm font-light pb-3 opacity-90">Entre em contato com gente e faça sua matrícula</p>
+                <a href="https://wa.me/5521986335597" target="_blank" class="px-8 py-2 bg-blue-500/20 border border-white/60 rounded-full hover:bg-white hover:text-blue-700 transition font-medium backdrop-blur-sm text-sm">
+                    Contato
+                </a>
+            </div>
+
+            <div class="flex flex-col items-start md:items-end text-left md:text-right space-y-6 order-1 md:order-2">
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight md:max-w-[500px]">
+                    Somos Polo do <br class="hidden sm:inline">Seminário do Sul
+                </h2>
+                
+                <div class="flex items-center space-x-4 justify-start md:justify-end">
+                    <!-- Logo 1 (Seminário) -->
+                    <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center rounded-full shadow-lg">
+                        <img src="logo-seminario.png" alt="Seminário do Sul" class="w-full h-full object-contain">
+                    </div>
+    
+                    <!-- Logo 2 (Boneco Preto) - CORRIGIDA -->
+                    <div class="w-20 h-20 md:w-24 md:h-24 flex items-center justify-center rounded-full shadow-lg">
+                        <img src="logo-boneco.png" alt="Logo Parceria" class="w-full h-full object-contain">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEÇÃO PROJETOS -->
+    <section id="projetos" class="py-20 bg-slate-50 text-gray-800">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Nossos Projetos</h2>
+            <p class="text-gray-500">Em breve, mais informações sobre as nossas ações e projetos sociais.</p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PROGRAMAÇÃO -->
+    <section id="programacao" class="py-20 bg-white text-gray-800">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Programação</h2>
+            <p class="text-gray-500 mb-8">Nossos encontros e reuniões semanais.</p>
+            
+            <div class="grid md:grid-cols-2 gap-6 text-left max-w-3xl mx-auto">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-lg">Culto de Celebração</h3>
+                    <p class="text-gray-500 text-sm">Domingos - 19h</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-lg">Culto de Ensino</h3>
+                    <p class="text-gray-500 text-sm">Quartas - 20h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+        <p>© 2026 Igreja em Inhoaíba. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

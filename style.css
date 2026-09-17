@@ -1,0 +1,50 @@
+/* 1. FONTE NORMAL */
+@font-face {
+    font-family: 'MinhaHelvetica';
+    src: url('helvetica.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 2. FONTE NEGRITO (Adicione isso!) */
+@font-face {
+    font-family: 'MinhaHelvetica';
+    src: url('helvetica-bold.ttf') format('truetype'); /* Nome do arquivo bold */
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* 2. DEFINIÇÕES GERAIS */
+body {
+    /* Usa a fonte importada ou fontes padrão de sistema parecidas com Helvetica */
+    font-family: 'MinhaHelvetica', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    letter-spacing: -0.8px;
+}
+
+/* 3. SCROLL E NAVEGAÇÃO */
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    /* Dá um espaço para o cabeçalho fixo não esconder os títulos */
+    scroll-margin-top: 5rem; 
+}
+
+/* 4. ESTILOS DA BARRA DE ROLAGEM */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9ca3af;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4b5563;
+}
