@@ -26,11 +26,6 @@ html {
     scroll-behavior: smooth;
 }
 
-section {
-    /* Dá um espaço para o cabeçalho fixo não esconder os títulos */
-    scroll-margin-top: 5rem; 
-}
-
 /* 4. ESTILOS DA BARRA DE ROLAGEM */
 ::-webkit-scrollbar {
     width: 8px;
@@ -47,4 +42,17 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #4b5563;
+}
+
+/* Esconde a barra do Google Tradutor e os popups originais */
+.skiptranslate, .goog-te-banner-frame { 
+    display: none !important; 
+}
+body { 
+    top: 0px !important; 
+}
+/* Evita que o Google mude a cor do texto ao passar o mouse */
+.goog-text-highlight {
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
